@@ -1,0 +1,29 @@
+﻿<Window x:Class="HamAndEggs_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HamAndEggs_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Command="New" />
+                <Separator />
+                <MenuItem x:Name="Head" Header="_Exit" Click="OnExit" />
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
+            <MenuItem Header="_Navigate">
+                <MenuItem Header="_Menu" Click="GoToMenuPage"  />
+                <MenuItem Header="_Tables" Click="GoToTablesPage"  />
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+    </DockPanel>
+</Window>
