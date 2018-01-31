@@ -31,6 +31,7 @@ namespace HamAndEggs_.Pages
             btnCt = ((Button)sender).Content.ToString();
             MainWindow.AppWindow.btnContent = btnCt;
             MainWindow.AppWindow.GoToMenuPage(sender, e);
+
         }
     }
 }
