@@ -26,7 +26,7 @@ namespace HamAndEggs_.Pages
     /// </summary>
     public partial class Menu : Page
     {
-        string strConnection = ConfigurationManager.ConnectionStrings["HamAndEggsConnectionSpire"].ConnectionString;
+        string strConnection = ConfigurationManager.ConnectionStrings["KFCConnection"].ConnectionString;
         string CmdString = string.Empty;
         public string Tafel;
 

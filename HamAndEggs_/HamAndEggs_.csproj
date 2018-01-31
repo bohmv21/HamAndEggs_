@@ -84,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ham_and_EggsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="KFCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KFCDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -131,6 +136,17 @@
     </None>
     <None Include="Ham_and_EggsDataSet.xss">
       <DependentUpon>Ham_and_EggsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KFCDataSet.xsc">
+      <DependentUpon>KFCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KFCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KFCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KFCDataSet.xss">
+      <DependentUpon>KFCDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

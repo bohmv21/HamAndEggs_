@@ -43,5 +43,16 @@ namespace HamAndEggs_.Properties {
                 return ((string)(this["Ham_and_EggsConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=blaxadowfire.ddns.net,1433;Initial Catalog=KFC;Persist Security Info=" +
+            "True;User ID=Bo;Password=123456789")]
+        public string KFCConnectionString {
+            get {
+                return ((string)(this["KFCConnectionString"]));
+            }
+        }
     }
 }
